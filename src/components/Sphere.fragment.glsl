@@ -9,8 +9,8 @@ vec3 hsl2rgb(in vec3 c) {
 
 void main() {
   float timeScaled = uTime * 0.2;
-  vec3 baseColour = hsl2rgb(vec3(timeScaled, 0.2, 0.2));
-  vec3 hoverColour = hsl2rgb(vec3(timeScaled, 0.8, 0.9));
+  vec3 baseColour = hsl2rgb(vec3(timeScaled, 0.2, 0.7));
+  vec3 hoverColour = hsl2rgb(vec3(0.1, 0.1, 0.9));
   vec3 colour = mix(baseColour, hoverColour,  vHoverArea);
 
   gl_FragColor = vec4(colour, 1.0);
